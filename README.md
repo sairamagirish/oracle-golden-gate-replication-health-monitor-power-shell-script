@@ -36,12 +36,19 @@ The script captures two snapshots of Golden Gate process state and compares crit
 - Verifies replication progress using lag trends, RBA movement, and trail file progression.
 - Detects hidden replication bottlenecks and stalled processes.
 - Minimizes the risk of undetected replication failures.
-- Provides standardized health checks across multiple GoldenGate environments.
+- Provides standardized health checks across multiple Golden Gate environments.
 - Accelerates operational validation and troubleshooting activities.
 - Reduces manual monitoring effort through automated analysis and reporting.
 - Enhances reliability of replication operations in production environments.
 - Supports proactive identification of performance and data flow issues.
-  
+
+Expected Output :
+- [OK] Processing normally
+- [WARN] Lag increasing
+- [FAIL] Not RUNNING
+- ✅ OGG HEALTHY
+- ❌ OGG ISSUES DETECTED
+
 ## Technologies
 
 - Oracle Golden Gate
@@ -49,6 +56,10 @@ The script captures two snapshots of Golden Gate process state and compares crit
 - GGSCI
 - Replication Monitoring
 - Operational Automation
+
+## Disclaimer
+
+This project is based on operational experience with Oracle Golden Gate environments. All environment-specific information has been removed or generalized. Review and test thoroughly before use in production.
 
 ## Author
 
